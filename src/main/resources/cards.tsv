@@ -1,0 +1,27 @@
+# id name faction type cost attack health deathMana text
+aftershock	余悸	0	UNIT	2	1	3	1	死亡（含牺牲）：己方下个回合额外冲动＋1，总量最多10。
+relief	释然	1	UNIT	2	1	3	1	死亡（含牺牲）：己方下个回合额外冲动＋1，总量最多10。
+emptiness	空虚	0	RESOURCE	0	0	0	0	占用空槽，不参与战斗。己方回合结束离场，下个己方回合额外冲动＋1；总量最多10。提前牺牲不生效。
+hope	祈盼	1	RESOURCE	0	0	0	0	占用空槽，不参与战斗。己方回合结束离场，下个己方回合额外冲动＋1；总量最多10。提前牺牲不生效。
+boredom	无聊	0	UNIT	1	1	2	0	
+bewilderment	茫然	0	UNIT	1	2	1	0	
+irritation	烦躁	0	UNIT	2	2	3	0	
+envy	嫉妒	0	UNIT	2	4	1	0	
+fear	恐惧	0	UNIT	3	5	2	0	
+obsession	痴迷	0	UNIT	3	3	4	0	
+sloth	怠惰	0	UNIT	4	3	6	0	
+anger	愤怒	0	UNIT	4	6	3	0	
+insight	顿悟	0	UNIT	5	6	5	0	
+salvation	拯救	0	UNIT	7	7	8	0	
+peace	平和	1	UNIT	1	2	1	0	
+focus	专注	1	UNIT	1	1	2	0	
+clarity	清明	1	UNIT	2	2	3	0	
+responsibility	承担	1	UNIT	2	3	2	0	
+calm	镇静	1	UNIT	3	3	4	0	
+awe	敬畏	1	UNIT	3	2	5	0	
+persistence	执着	1	UNIT	4	5	4	0	
+shame	羞愧	1	UNIT	4	4	5	0	
+repetition	重复	1	UNIT	5	5	6	0	
+domination	支配	1	UNIT	7	8	7	0	
+anxiety	焦虑	0	SPELL	2	0	0	0	敌方单位攻击－2，持续至对方下回合结束。
+grief	哀悼	1	SPELL	2	0	0	0	牺牲己方单位，对敌方单位造成3伤害。

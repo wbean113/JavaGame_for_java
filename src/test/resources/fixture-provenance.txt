@@ -1,0 +1,18 @@
+prototype-fixtures.json.gz 的来源与边界
+
+夹具由交接包「卡牌与规则数据/reference-engine.cjs」独立运行生成，未调用 Java 游戏实现。
+覆盖 F/G 两种规则、base/spells 两种牌库、8个种子（含中文、emoji、空串），共32局合成操作。
+另重放「测试记录/测试员3」的5份F真人记录。生成时先断言JS重放终态与原始记录一致。
+共37局、1342条行动。Java测试对开局及每条行动后的所有牌区顺序、生命、登场回合、焦虑、冲动、
+待用资源、收益与损失统计、胜负逐项比较，另检查唯一实例ID、牌张守恒与亡语收益守恒。
+两端事件文案、Java实例ID和协议版本不做相等比较；事件边界由 GameEngineTest 的专门场景检查。
+夹具中保存原始JS引擎与5份真人记录的SHA-256，供追溯来源。
+
+正常运行 mvn test 不需要 Node、不需要原始交接包。
+如需重新生成（从工程根目录，Node 18+）：
+  node tools/generate-reference-fixtures.cjs
+或明确指定交接包目录：
+  node tools/generate-reference-fixtures.cjs "交接包完整路径"
+
+只有规则基线有意变更时才更新夹具；不要为消除Java实现的测试失败而修改预期结果。
+这些检查证明实现与当前原型一致，不证明游戏已经达到最终平衡。
